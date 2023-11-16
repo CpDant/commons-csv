@@ -69,6 +69,12 @@
       <version>2.2.224</version>
       <scope>test</scope>
     </dependency>
+    <dependency>
+      <groupId>org.openjdk.jmh</groupId>
+      <artifactId>jmh-core</artifactId>
+      <version>1.37</version>
+      <scope>test</scope>
+    </dependency>
   </dependencies>
 
   <developers>
@@ -401,12 +407,6 @@
       <id>benchmark</id>
 
       <dependencies>
-        <dependency>
-          <groupId>org.openjdk.jmh</groupId>
-          <artifactId>jmh-core</artifactId>
-          <version>1.37</version>
-          <scope>test</scope>
-        </dependency>
 
         <dependency>
           <groupId>org.openjdk.jmh</groupId>
