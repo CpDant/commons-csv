@@ -142,28 +142,43 @@ public class CSVFormatTest {
 
     @Test
     public void testDuplicateHeaderElementsTrue() {
-        CSVFormat.DEFAULT.builder().setAllowDuplicateHeaderNames(true).setHeader("A", "A").build();
+        final String[] header = { "A", "A" };
+        final CSVFormat format = CSVFormat.DEFAULT.builder().setAllowDuplicateHeaderNames(true).setHeader("A", "A").build();
+        assertEquals(2, format.getHeader().length);
+        assertArrayEquals(header, format.getHeader());
     }
 
     @SuppressWarnings("deprecation")
     @Test
     public void testDuplicateHeaderElementsTrue_Deprecated() {
-        CSVFormat.DEFAULT.withAllowDuplicateHeaderNames(true).withHeader("A", "A");
+        final String[] header = { "A", "A" };
+        final CSVFormat format = CSVFormat.DEFAULT.withAllowDuplicateHeaderNames(true).withHeader("A", "A");
+        assertEquals(2, format.getHeader().length);
+        assertArrayEquals(header, format.getHeader());
     }
 
     @Test
     public void testDuplicateHeaderElementsTrueContainsEmpty1() {
-        CSVFormat.DEFAULT.builder().setAllowDuplicateHeaderNames(false).setHeader("A", "", "B", "").build();
+        final String[] header = {"A", "", "B", ""};
+        final CSVFormat format = CSVFormat.DEFAULT.builder().setAllowDuplicateHeaderNames(false).setHeader("A", "", "B", "").build();
+        assertEquals(4, format.getHeader().length);
+        assertArrayEquals(header, format.getHeader());
     }
 
     @Test
     public void testDuplicateHeaderElementsTrueContainsEmpty2() {
-        CSVFormat.DEFAULT.builder().setDuplicateHeaderMode(DuplicateHeaderMode.ALLOW_EMPTY).setHeader("A", "", "B", "").build();
+        final String[] header = {"A", "", "B", ""};
+        final CSVFormat format = CSVFormat.DEFAULT.builder().setDuplicateHeaderMode(DuplicateHeaderMode.ALLOW_EMPTY).setHeader("A", "", "B", "").build();
+        assertEquals(4, format.getHeader().length);
+        assertArrayEquals(header, format.getHeader());
     }
 
     @Test
     public void testDuplicateHeaderElementsTrueContainsEmpty3() {
-        CSVFormat.DEFAULT.builder().setAllowDuplicateHeaderNames(false).setAllowMissingColumnNames(true).setHeader("A", "", "B", "").build();
+        final String[] header = {"A", "", "B", ""};
+        final CSVFormat format = CSVFormat.DEFAULT.builder().setAllowDuplicateHeaderNames(false).setAllowMissingColumnNames(true).setHeader("A", "", "B", "").build();
+        assertEquals(4, format.getHeader().length);
+        assertArrayEquals(header, format.getHeader());
     }
 
     @Test
@@ -1423,6 +1438,7 @@ public class CSVFormatTest {
         final CSVFormat format = CSVFormat.DEFAULT;
         final Class<Enum<?>> simpleName = null;
         format.withHeader(simpleName);
+        assertArrayEquals(null, format.getHeader());
     }
 
     @Test
@@ -1430,6 +1446,7 @@ public class CSVFormatTest {
         final CSVFormat format = CSVFormat.DEFAULT;
         final ResultSet resultSet = null;
         format.withHeader(resultSet);
+        assertArrayEquals(null, format.getHeader());
     }
 
     @Test
