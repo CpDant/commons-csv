@@ -356,7 +356,9 @@ public class CSVRecordTest {
     public void testToMapWithShortRecord() throws Exception {
         try (final CSVParser parser = CSVParser.parse("a,b", CSVFormat.DEFAULT.withHeader("A", "B", "C"))) {
             final CSVRecord shortRec = parser.iterator().next();
-            shortRec.toMap();
+            final Map<String, String> map = shortRec.toMap();
+            assertNotNull(map, "Map is not null.");
+            assertFalse(map.isEmpty(), "Map is empty.");
         }
     }
 

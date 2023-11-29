@@ -986,7 +986,16 @@ public class CSVParserTest {
     public void testHeaderMissingWithNull() throws Exception {
         final Reader in = new StringReader("a,,c,,e\n1,2,3,4,5\nv,w,x,y,z");
         try (final CSVParser parser = CSVFormat.DEFAULT.withHeader().withNullString("").withAllowMissingColumnNames().parse(in)) {
-            parser.iterator();
+            final Iterator<CSVRecord> records = parser.iterator();
+
+            for (int i = 0; i < 2; i++) {
+                assertTrue(records.hasNext());
+                final CSVRecord record = records.next();
+                assertEquals(record.get(0), record.get("a"));
+                assertEquals(record.get(2), record.get("c"));
+            }
+
+            assertFalse(records.hasNext());
         }
     }
 
@@ -994,7 +1003,16 @@ public class CSVParserTest {
     public void testHeadersMissing() throws Exception {
         try (final Reader in = new StringReader("a,,c,,e\n1,2,3,4,5\nv,w,x,y,z");
             final CSVParser parser = CSVFormat.DEFAULT.withHeader().withAllowMissingColumnNames().parse(in)) {
-            parser.iterator();
+            final Iterator<CSVRecord> records = parser.iterator();
+
+            for (int i = 0; i < 2; i++) {
+                assertTrue(records.hasNext());
+                final CSVRecord record = records.next();
+                assertEquals(record.get(0), record.get("a"));
+                assertEquals(record.get(2), record.get("c"));
+            }
+
+            assertFalse(records.hasNext());
         }
     }
 
