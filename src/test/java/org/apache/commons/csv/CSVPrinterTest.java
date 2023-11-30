@@ -67,6 +67,8 @@ import org.apache.commons.lang3.StringUtils;
 import org.h2.tools.SimpleResultSet;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.CsvSource;
 
 /**
  * Tests {@link CSVPrinter}.
@@ -472,8 +474,9 @@ import org.junit.jupiter.api.Test;
         }
     }
 
-    @Test
-     void testEscapeBackslash1() throws IOException {
+    @ParameterizedTest
+    @CsvSource(value = {"\\:\\", "\\\r:\\\r", "X\\\r:X\\\r", "\\\\:\\\\", "\\\\:\\\\"}, delimiter = ':')
+    void testEscapeBackslash() throws IOException {
         final StringWriter sw = new StringWriter();
         try (final CSVPrinter printer = new CSVPrinter(sw, CSVFormat.DEFAULT.withQuote(QUOTE_CH))) {
             printer.print("\\");
@@ -481,85 +484,14 @@ import org.junit.jupiter.api.Test;
         assertEquals("\\", sw.toString());
     }
 
-    @Test
-     void testEscapeBackslash2() throws IOException {
-        final StringWriter sw = new StringWriter();
-        try (final CSVPrinter printer = new CSVPrinter(sw, CSVFormat.DEFAULT.withQuote(QUOTE_CH))) {
-            printer.print("\\\r");
-        }
-        assertEquals("'\\\r'", sw.toString());
-    }
-
-    @Test
-     void testEscapeBackslash3() throws IOException {
-        final StringWriter sw = new StringWriter();
-        try (final CSVPrinter printer = new CSVPrinter(sw, CSVFormat.DEFAULT.withQuote(QUOTE_CH))) {
-            printer.print("X\\\r");
-        }
-        assertEquals("'X\\\r'", sw.toString());
-    }
-
-    @Test
-     void testEscapeBackslash4() throws IOException {
-        final StringWriter sw = new StringWriter();
-        try (final CSVPrinter printer = new CSVPrinter(sw, CSVFormat.DEFAULT.withQuote(QUOTE_CH))) {
-            printer.print("\\\\");
-        }
-        assertEquals("\\\\", sw.toString());
-    }
-
-    @Test
-     void testEscapeBackslash5() throws IOException {
-        final StringWriter sw = new StringWriter();
-        try (final CSVPrinter printer = new CSVPrinter(sw, CSVFormat.DEFAULT.withQuote(QUOTE_CH))) {
-            printer.print("\\\\");
-        }
-        assertEquals("\\\\", sw.toString());
-    }
-
-    @Test
-     void testEscapeNull1() throws IOException {
+    @ParameterizedTest
+    @CsvSource(value = {"\\:\\", "\\\r:\"\\\r" + "\"", "X\\\r:\"X\\\r" + "\"", "\\\\:\\\\", "\\\\:\\\\"}, delimiter = ':')
+    void testEscapeNull() throws IOException {
         final StringWriter sw = new StringWriter();
         try (final CSVPrinter printer = new CSVPrinter(sw, CSVFormat.DEFAULT.withEscape(null))) {
             printer.print("\\");
         }
         assertEquals("\\", sw.toString());
-    }
-
-    @Test
-     void testEscapeNull2() throws IOException {
-        final StringWriter sw = new StringWriter();
-        try (final CSVPrinter printer = new CSVPrinter(sw, CSVFormat.DEFAULT.withEscape(null))) {
-            printer.print("\\\r");
-        }
-        assertEquals("\"\\\r\"", sw.toString());
-    }
-
-    @Test
-     void testEscapeNull3() throws IOException {
-        final StringWriter sw = new StringWriter();
-        try (final CSVPrinter printer = new CSVPrinter(sw, CSVFormat.DEFAULT.withEscape(null))) {
-            printer.print("X\\\r");
-        }
-        assertEquals("\"X\\\r\"", sw.toString());
-    }
-
-    @Test
-     void testEscapeNull4() throws IOException {
-        final StringWriter sw = new StringWriter();
-        try (final CSVPrinter printer = new CSVPrinter(sw, CSVFormat.DEFAULT.withEscape(null))) {
-            printer.print("\\\\");
-        }
-        assertEquals("\\\\", sw.toString());
-    }
-
-    @Test
-     void testEscapeNull5() throws IOException {
-        final StringWriter sw = new StringWriter();
-        try (final CSVPrinter printer = new CSVPrinter(sw, CSVFormat.DEFAULT.withEscape(null))) {
-            printer.print("\\\\");
-        }
-        assertEquals("\\\\", sw.toString());
     }
 
     @Test
