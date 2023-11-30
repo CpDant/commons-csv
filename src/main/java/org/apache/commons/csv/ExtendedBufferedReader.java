@@ -178,11 +178,8 @@ final class ExtendedBufferedReader extends BufferedReader {
 
             for (int i = offset; i < offset + len; i++) {
                 final char ch = buf[i];
-                if (ch == LF) {
-                    if (CR != (i > offset ? buf[i - 1] : lastChar)) {
-                        eolCounter++;
-                    }
-                } else if (ch == CR) {
+
+                if (isEndOfLine(ch, i , offset, buf, lastChar)) {
                     eolCounter++;
                 }
             }
@@ -195,6 +192,17 @@ final class ExtendedBufferedReader extends BufferedReader {
 
         position += len;
         return len;
+    }
+
+    private boolean isEndOfLine(final char ch, int i, int offset, final char[] buf, int lastChar) {
+        if (ch == LF) {
+            if (CR != (i > offset ? buf[i - 1] : lastChar)) {
+                return true;
+            }
+        } else if (ch == CR) {
+            return true;
+        }
+        return false;
     }
 
     /**
