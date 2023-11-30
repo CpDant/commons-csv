@@ -484,47 +484,13 @@ public final class CSVParser implements Iterable<CSVRecord>, Closeable {
                     headerComment = nextRecord.getComment();
                 }
             } else {
-                if (this.format.getSkipHeaderRecord()) {
-                    final CSVRecord nextRecord = this.nextRecord();
-                    if (nextRecord != null) {
-                        headerComment = nextRecord.getComment();
-                    }
-                }
+                getHeaderCommentWhenFormatHeaderPresent();
                 headerRecord = formatHeader;
             }
 
             // build the name to index mappings
             if (headerRecord != null) {
-                // Track an occurrence of a null, empty or blank header.
-                boolean observedMissing = false;
-                for (int i = 0; i < headerRecord.length; i++) {
-                    final String header = headerRecord[i];
-                    final boolean blankHeader = CSVFormat.isBlank(header);
-                    if (blankHeader && !this.format.getAllowMissingColumnNames()) {
-                        throw new IllegalArgumentException(
-                            "A header name is missing in " + Arrays.toString(headerRecord));
-                    }
-
-                    final boolean containsHeader = blankHeader ? observedMissing : hdrMap.containsKey(header);
-                    final DuplicateHeaderMode headerMode = this.format.getDuplicateHeaderMode();
-                    final boolean duplicatesAllowed = headerMode == DuplicateHeaderMode.ALLOW_ALL;
-                    final boolean emptyDuplicatesAllowed = headerMode == DuplicateHeaderMode.ALLOW_EMPTY;
-
-                    if (containsHeader && !duplicatesAllowed && !(blankHeader && emptyDuplicatesAllowed)) {
-                        throw new IllegalArgumentException(
-                            String.format(
-                                "The header contains a duplicate name: \"%s\" in %s. If this is valid then use CSVFormat.Builder.setDuplicateHeaderMode().",
-                                header, Arrays.toString(headerRecord)));
-                    }
-                    observedMissing |= blankHeader;
-                    if (header != null) {
-                        hdrMap.put(header, Integer.valueOf(i));
-                        if (headerNames == null) {
-                            headerNames = new ArrayList<>(headerRecord.length);
-                        }
-                        headerNames.add(header);
-                    }
-                }
+                headerNames = getHeaderNames(headerRecord, hdrMap);
             }
         }
         if (headerNames == null) {
@@ -533,6 +499,50 @@ public final class CSVParser implements Iterable<CSVRecord>, Closeable {
             headerNames = Collections.unmodifiableList(headerNames);
         }
         return new Headers(hdrMap, headerNames);
+    }
+
+    private void getHeaderCommentWhenFormatHeaderPresent() throws IOException {
+        if (this.format.getSkipHeaderRecord()) {
+            final CSVRecord nextRecord = this.nextRecord();
+            if (nextRecord != null) {
+                headerComment = nextRecord.getComment();
+            }
+        }
+    }
+
+    private List<String> getHeaderNames(String[] headerRecord, Map<String, Integer> hdrMap) {
+        List<String> headerNames = null;
+        // Track an occurrence of a null, empty or blank header.
+        boolean observedMissing = false;
+        for (int i = 0; i < headerRecord.length; i++) {
+            final String header = headerRecord[i];
+            final boolean blankHeader = CSVFormat.isBlank(header);
+            if (blankHeader && !this.format.getAllowMissingColumnNames()) {
+                throw new IllegalArgumentException(
+                        "A header name is missing in " + Arrays.toString(headerRecord));
+            }
+
+            final boolean containsHeader = blankHeader ? observedMissing : hdrMap.containsKey(header);
+            final DuplicateHeaderMode headerMode = this.format.getDuplicateHeaderMode();
+            final boolean duplicatesAllowed = headerMode == DuplicateHeaderMode.ALLOW_ALL;
+            final boolean emptyDuplicatesAllowed = headerMode == DuplicateHeaderMode.ALLOW_EMPTY;
+
+            if (containsHeader && !duplicatesAllowed && !(blankHeader && emptyDuplicatesAllowed)) {
+                throw new IllegalArgumentException(
+                        String.format(
+                                "The header contains a duplicate name: \"%s\" in %s. If this is valid then use CSVFormat.Builder.setDuplicateHeaderMode().",
+                                header, Arrays.toString(headerRecord)));
+            }
+            observedMissing |= blankHeader;
+            if (header != null) {
+                hdrMap.put(header, Integer.valueOf(i));
+                if (headerNames == null) {
+                    headerNames = new ArrayList<>(headerRecord.length);
+                }
+                headerNames.add(header);
+            }
+        }
+        return headerNames;
     }
 
     /**
