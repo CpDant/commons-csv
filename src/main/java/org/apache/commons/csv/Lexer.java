@@ -345,10 +345,7 @@ final class Lexer implements Closeable {
                     token.content.append((char) c);
                 } else {
                     // token finish mark (encapsulator) reached: ignore whitespace till delimiter
-                    while (true) {
-                        c = reader.read();
-                        if (delimiter(token, c)) return token;
-                    }
+                    return ignoreWhiteSpaceUntilDelimiter(token);
                 }
             } else if (isEndOfFile(c)) {
                 // error condition (end of file before end of token)
@@ -358,6 +355,14 @@ final class Lexer implements Closeable {
                 // consume character
                 token.content.append((char) c);
             }
+        }
+    }
+
+    private Token ignoreWhiteSpaceUntilDelimiter(Token token) throws IOException {
+        int c;
+        while (true) {
+            c = reader.read();
+            if (delimiter(token, c)) return token;
         }
     }
 
