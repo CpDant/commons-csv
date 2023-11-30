@@ -2175,6 +2175,17 @@ public final class CSVFormat implements Serializable {
         return pos;
     }
 
+    private void appendUntilDelimiter(ExtendedBufferedReader bufferedReader, Appendable appendable, int delimLength) throws IOException {
+        final char escape = getEscapeCharacter().charValue();
+
+        for (int i = 1; i < delimLength; i++) {
+            int c = bufferedReader.read();
+            append(escape, appendable);
+            append((char) c, appendable);
+        }
+
+    }
+
     private boolean isCRLFEscape(char c) {
         return c == CR || c == LF || c == getEscapeCharacter().charValue();
     }
@@ -2195,7 +2206,7 @@ public final class CSVFormat implements Serializable {
             builder.append((char) c);
             final boolean isDelimiterStart = isDelimiter((char) c, builder.toString() + new String(bufferedReader.lookAhead(delimLength - 1)), pos, delim,
                     delimLength);
-            if (c == CR || c == LF || c == escape || isDelimiterStart) {
+            if (isCRLFEscape((char) c) || isDelimiterStart) {
                 // write out segment up until this char
                 if (pos > start) {
                     append(builder.substring(start, pos), appendable);
@@ -2212,11 +2223,7 @@ public final class CSVFormat implements Serializable {
                 append((char) c, appendable);
 
                 if (isDelimiterStart) {
-                    for (int i = 1; i < delimLength; i++) {
-                        c = bufferedReader.read();
-                        append(escape, appendable);
-                        append((char) c, appendable);
-                    }
+                    appendUntilDelimiter(bufferedReader, appendable, delimLength);
                 }
 
                 start = pos + 1; // start on the current char after this one
