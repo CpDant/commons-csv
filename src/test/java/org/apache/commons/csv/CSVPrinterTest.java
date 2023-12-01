@@ -476,22 +476,40 @@ import org.junit.jupiter.params.provider.CsvSource;
 
     @ParameterizedTest
     @CsvSource(value = {"\\:\\", "\\\r:\\\r", "X\\\r:X\\\r", "\\\\:\\\\", "\\\\:\\\\"}, delimiter = ':')
-    void testEscapeBackslash() throws IOException {
+    void testEscapeBackslash(String input, String expected) throws IOException {
         final StringWriter sw = new StringWriter();
         try (final CSVPrinter printer = new CSVPrinter(sw, CSVFormat.DEFAULT.withQuote(QUOTE_CH))) {
-            printer.print("\\");
+            printer.print(input);
         }
-        assertEquals("\\", sw.toString());
+        assertEquals(expected, sw.toString());
     }
 
     @ParameterizedTest
-    @CsvSource(value = {"\\:\\", "\\\r:\"\\\r" + "\"", "X\\\r:\"X\\\r" + "\"", "\\\\:\\\\", "\\\\:\\\\"}, delimiter = ':')
-    void testEscapeNull() throws IOException {
+    @CsvSource(value = {"\\:\\", "\\\\:\\\\", "\\\\:\\\\"}, delimiter = ':')
+    void testEscapeNull1(String input, String expected) throws IOException {
         final StringWriter sw = new StringWriter();
         try (final CSVPrinter printer = new CSVPrinter(sw, CSVFormat.DEFAULT.withEscape(null))) {
-            printer.print("\\");
+            printer.print(input);
         }
-        assertEquals("\\", sw.toString());
+        assertEquals(expected, sw.toString());
+    }
+
+    @Test
+    void testEscapeNull2() throws IOException {
+        final StringWriter sw = new StringWriter();
+        try (final CSVPrinter printer = new CSVPrinter(sw, CSVFormat.DEFAULT.withEscape(null))) {
+            printer.print("\\\r");
+        }
+        assertEquals("\"\\\r\"", sw.toString());
+    }
+
+    @Test
+    void testEscapeNull3() throws IOException {
+        final StringWriter sw = new StringWriter();
+        try (final CSVPrinter printer = new CSVPrinter(sw, CSVFormat.DEFAULT.withEscape(null))) {
+            printer.print("X\\\r");
+        }
+        assertEquals("\"X\\\r\"", sw.toString());
     }
 
     @Test
