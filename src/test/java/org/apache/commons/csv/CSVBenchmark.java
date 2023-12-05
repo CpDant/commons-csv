@@ -52,8 +52,8 @@ import org.supercsv.prefs.CsvPreference;
 @BenchmarkMode(Mode.AverageTime)
 @Fork(value = 1, jvmArgs = {"-server", "-Xms1024M", "-Xmx1024M"})
 @Threads(1)
-@Warmup(iterations = 5)
-@Measurement(iterations = 20)
+@Warmup(iterations = 3)
+@Measurement(iterations = 10)
 @OutputTimeUnit(TimeUnit.MILLISECONDS)
 @State(Scope.Benchmark)
 public class CSVBenchmark {
