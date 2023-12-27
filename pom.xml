@@ -253,6 +253,18 @@
     </pluginManagement>
     <plugins>
       <plugin>
+        <groupId>org.owasp</groupId>
+        <artifactId>dependency-check-maven</artifactId>
+        <version>9.0.7</version>
+        <executions>
+          <execution>
+            <goals>
+              <goal>check</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+      <plugin>
         <artifactId>maven-compiler-plugin</artifactId>
         <configuration>
           <testExcludes>
@@ -332,7 +344,6 @@
           </dependency>
         </dependencies>
         <configuration>
-          <timeoutFactor>1.5</timeoutFactor>
           <threads>8</threads>
         </configuration>
       </plugin>
