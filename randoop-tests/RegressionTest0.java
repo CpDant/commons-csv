@@ -8,9 +8,9 @@ public class RegressionTest0 {
     public static boolean debug = false;
 
     @Test
-    public void test01() throws Throwable {
+    public void test001() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test01");
+            System.out.format("%n%s%n", "RegressionTest0.test001");
         java.net.URL uRL0 = null;
         java.nio.charset.Charset charset1 = null;
         org.apache.commons.csv.CSVFormat cSVFormat2 = null;
@@ -24,9 +24,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test02() throws Throwable {
+    public void test002() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test02");
+            System.out.format("%n%s%n", "RegressionTest0.test002");
         java.io.File file0 = null;
         java.nio.charset.Charset charset1 = null;
         org.apache.commons.csv.CSVFormat cSVFormat2 = null;
@@ -40,9 +40,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test03() throws Throwable {
+    public void test003() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test03");
+            System.out.format("%n%s%n", "RegressionTest0.test003");
         java.nio.file.Path path0 = null;
         java.nio.charset.Charset charset1 = null;
         org.apache.commons.csv.CSVFormat cSVFormat2 = null;
@@ -56,9 +56,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test04() throws Throwable {
+    public void test004() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test04");
+            System.out.format("%n%s%n", "RegressionTest0.test004");
         java.io.Reader reader0 = null;
         org.apache.commons.csv.CSVFormat cSVFormat1 = null;
         // The following exception was thrown during execution in test generation
@@ -71,9 +71,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test05() throws Throwable {
+    public void test005() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test05");
+            System.out.format("%n%s%n", "RegressionTest0.test005");
         org.apache.commons.csv.CSVFormat cSVFormat1 = null;
         // The following exception was thrown during execution in test generation
         try {
@@ -85,9 +85,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test06() throws Throwable {
+    public void test006() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test06");
+            System.out.format("%n%s%n", "RegressionTest0.test006");
         java.io.Reader reader0 = null;
         org.apache.commons.csv.CSVFormat cSVFormat1 = null;
         // The following exception was thrown during execution in test generation
@@ -100,18 +100,18 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test07() throws Throwable {
+    public void test007() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test07");
+            System.out.format("%n%s%n", "RegressionTest0.test007");
         java.lang.Object obj0 = new java.lang.Object();
         java.lang.Class<?> wildcardClass1 = obj0.getClass();
         org.junit.Assert.assertNotNull(wildcardClass1);
     }
 
     @Test
-    public void test08() throws Throwable {
+    public void test008() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test08");
+            System.out.format("%n%s%n", "RegressionTest0.test008");
         java.io.InputStream inputStream0 = null;
         java.nio.charset.Charset charset1 = null;
         org.apache.commons.csv.CSVFormat cSVFormat2 = null;
@@ -125,9 +125,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test09() throws Throwable {
+    public void test009() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test09");
+            System.out.format("%n%s%n", "RegressionTest0.test009");
         java.io.Reader reader0 = null;
         org.apache.commons.csv.CSVFormat cSVFormat1 = null;
         // The following exception was thrown during execution in test generation
@@ -140,9 +140,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test10() throws Throwable {
+    public void test010() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test10");
+            System.out.format("%n%s%n", "RegressionTest0.test010");
         org.apache.commons.csv.CSVFormat cSVFormat1 = null;
         // The following exception was thrown during execution in test generation
         try {
@@ -154,9 +154,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test11() throws Throwable {
+    public void test011() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test11");
+            System.out.format("%n%s%n", "RegressionTest0.test011");
         java.io.Reader reader0 = null;
         org.apache.commons.csv.CSVFormat cSVFormat1 = null;
         // The following exception was thrown during execution in test generation
@@ -169,9 +169,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test12() throws Throwable {
+    public void test012() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test12");
+            System.out.format("%n%s%n", "RegressionTest0.test012");
         java.io.Reader reader0 = null;
         org.apache.commons.csv.CSVFormat cSVFormat1 = null;
         // The following exception was thrown during execution in test generation
@@ -184,9 +184,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test13() throws Throwable {
+    public void test013() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test13");
+            System.out.format("%n%s%n", "RegressionTest0.test013");
         java.io.Reader reader0 = null;
         org.apache.commons.csv.CSVFormat cSVFormat1 = null;
         // The following exception was thrown during execution in test generation
@@ -199,9 +199,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test14() throws Throwable {
+    public void test014() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test14");
+            System.out.format("%n%s%n", "RegressionTest0.test014");
         java.io.Reader reader0 = null;
         org.apache.commons.csv.CSVFormat cSVFormat1 = null;
         // The following exception was thrown during execution in test generation
@@ -214,9 +214,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test15() throws Throwable {
+    public void test015() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test15");
+            System.out.format("%n%s%n", "RegressionTest0.test015");
         java.io.Reader reader0 = null;
         org.apache.commons.csv.CSVFormat cSVFormat1 = null;
         // The following exception was thrown during execution in test generation
@@ -229,9 +229,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test16() throws Throwable {
+    public void test016() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test16");
+            System.out.format("%n%s%n", "RegressionTest0.test016");
         java.io.Reader reader0 = null;
         org.apache.commons.csv.CSVFormat cSVFormat1 = null;
         // The following exception was thrown during execution in test generation
@@ -244,9 +244,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test17() throws Throwable {
+    public void test017() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test17");
+            System.out.format("%n%s%n", "RegressionTest0.test017");
         java.io.Reader reader0 = null;
         org.apache.commons.csv.CSVFormat cSVFormat1 = null;
         // The following exception was thrown during execution in test generation
@@ -259,9 +259,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test18() throws Throwable {
+    public void test018() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test18");
+            System.out.format("%n%s%n", "RegressionTest0.test018");
         java.io.Reader reader0 = null;
         org.apache.commons.csv.CSVFormat cSVFormat1 = null;
         // The following exception was thrown during execution in test generation
@@ -274,9 +274,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test19() throws Throwable {
+    public void test019() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test19");
+            System.out.format("%n%s%n", "RegressionTest0.test019");
         java.io.Reader reader0 = null;
         org.apache.commons.csv.CSVFormat cSVFormat1 = null;
         // The following exception was thrown during execution in test generation
@@ -289,9 +289,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test20() throws Throwable {
+    public void test020() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test20");
+            System.out.format("%n%s%n", "RegressionTest0.test020");
         java.io.Reader reader0 = null;
         org.apache.commons.csv.CSVFormat cSVFormat1 = null;
         // The following exception was thrown during execution in test generation
@@ -304,9 +304,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test21() throws Throwable {
+    public void test021() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test21");
+            System.out.format("%n%s%n", "RegressionTest0.test021");
         java.io.Reader reader0 = null;
         org.apache.commons.csv.CSVFormat cSVFormat1 = null;
         // The following exception was thrown during execution in test generation
@@ -319,9 +319,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test22() throws Throwable {
+    public void test022() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test22");
+            System.out.format("%n%s%n", "RegressionTest0.test022");
         java.io.Reader reader0 = null;
         org.apache.commons.csv.CSVFormat cSVFormat1 = null;
         // The following exception was thrown during execution in test generation
@@ -334,9 +334,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test23() throws Throwable {
+    public void test023() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test23");
+            System.out.format("%n%s%n", "RegressionTest0.test023");
         java.io.Reader reader0 = null;
         org.apache.commons.csv.CSVFormat cSVFormat1 = null;
         // The following exception was thrown during execution in test generation
@@ -349,9 +349,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test24() throws Throwable {
+    public void test024() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test24");
+            System.out.format("%n%s%n", "RegressionTest0.test024");
         java.io.Reader reader0 = null;
         org.apache.commons.csv.CSVFormat cSVFormat1 = null;
         // The following exception was thrown during execution in test generation
@@ -364,9 +364,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test25() throws Throwable {
+    public void test025() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test25");
+            System.out.format("%n%s%n", "RegressionTest0.test025");
         java.io.Reader reader0 = null;
         org.apache.commons.csv.CSVFormat cSVFormat1 = null;
         // The following exception was thrown during execution in test generation
@@ -379,9 +379,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test26() throws Throwable {
+    public void test026() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test26");
+            System.out.format("%n%s%n", "RegressionTest0.test026");
         java.io.Reader reader0 = null;
         org.apache.commons.csv.CSVFormat cSVFormat1 = null;
         // The following exception was thrown during execution in test generation
@@ -394,9 +394,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test27() throws Throwable {
+    public void test027() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test27");
+            System.out.format("%n%s%n", "RegressionTest0.test027");
         java.io.Reader reader0 = null;
         org.apache.commons.csv.CSVFormat cSVFormat1 = null;
         // The following exception was thrown during execution in test generation
@@ -409,9 +409,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test28() throws Throwable {
+    public void test028() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test28");
+            System.out.format("%n%s%n", "RegressionTest0.test028");
         java.io.Reader reader0 = null;
         org.apache.commons.csv.CSVFormat cSVFormat1 = null;
         // The following exception was thrown during execution in test generation
@@ -424,9 +424,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test29() throws Throwable {
+    public void test029() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test29");
+            System.out.format("%n%s%n", "RegressionTest0.test029");
         java.io.Reader reader0 = null;
         org.apache.commons.csv.CSVFormat cSVFormat1 = null;
         // The following exception was thrown during execution in test generation
@@ -439,9 +439,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test30() throws Throwable {
+    public void test030() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test30");
+            System.out.format("%n%s%n", "RegressionTest0.test030");
         java.io.Reader reader0 = null;
         org.apache.commons.csv.CSVFormat cSVFormat1 = null;
         // The following exception was thrown during execution in test generation
@@ -454,9 +454,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test31() throws Throwable {
+    public void test031() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test31");
+            System.out.format("%n%s%n", "RegressionTest0.test031");
         java.io.Reader reader0 = null;
         org.apache.commons.csv.CSVFormat cSVFormat1 = null;
         // The following exception was thrown during execution in test generation
@@ -469,9 +469,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test32() throws Throwable {
+    public void test032() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test32");
+            System.out.format("%n%s%n", "RegressionTest0.test032");
         java.io.Reader reader0 = null;
         org.apache.commons.csv.CSVFormat cSVFormat1 = null;
         // The following exception was thrown during execution in test generation
@@ -484,9 +484,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test33() throws Throwable {
+    public void test033() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test33");
+            System.out.format("%n%s%n", "RegressionTest0.test033");
         java.io.Reader reader0 = null;
         org.apache.commons.csv.CSVFormat cSVFormat1 = null;
         // The following exception was thrown during execution in test generation
@@ -499,9 +499,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test34() throws Throwable {
+    public void test034() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test34");
+            System.out.format("%n%s%n", "RegressionTest0.test034");
         java.io.Reader reader0 = null;
         org.apache.commons.csv.CSVFormat cSVFormat1 = null;
         // The following exception was thrown during execution in test generation
@@ -514,9 +514,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test35() throws Throwable {
+    public void test035() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test35");
+            System.out.format("%n%s%n", "RegressionTest0.test035");
         java.io.Reader reader0 = null;
         org.apache.commons.csv.CSVFormat cSVFormat1 = null;
         // The following exception was thrown during execution in test generation
@@ -529,9 +529,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test36() throws Throwable {
+    public void test036() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test36");
+            System.out.format("%n%s%n", "RegressionTest0.test036");
         java.io.Reader reader0 = null;
         org.apache.commons.csv.CSVFormat cSVFormat1 = null;
         // The following exception was thrown during execution in test generation
@@ -544,9 +544,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test37() throws Throwable {
+    public void test037() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test37");
+            System.out.format("%n%s%n", "RegressionTest0.test037");
         java.io.Reader reader0 = null;
         org.apache.commons.csv.CSVFormat cSVFormat1 = null;
         // The following exception was thrown during execution in test generation
@@ -559,9 +559,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test38() throws Throwable {
+    public void test038() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test38");
+            System.out.format("%n%s%n", "RegressionTest0.test038");
         java.io.Reader reader0 = null;
         org.apache.commons.csv.CSVFormat cSVFormat1 = null;
         // The following exception was thrown during execution in test generation
@@ -574,9 +574,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test39() throws Throwable {
+    public void test039() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test39");
+            System.out.format("%n%s%n", "RegressionTest0.test039");
         java.io.Reader reader0 = null;
         org.apache.commons.csv.CSVFormat cSVFormat1 = null;
         // The following exception was thrown during execution in test generation
@@ -589,9 +589,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test40() throws Throwable {
+    public void test040() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test40");
+            System.out.format("%n%s%n", "RegressionTest0.test040");
         java.io.Reader reader0 = null;
         org.apache.commons.csv.CSVFormat cSVFormat1 = null;
         // The following exception was thrown during execution in test generation
@@ -604,9 +604,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test41() throws Throwable {
+    public void test041() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test41");
+            System.out.format("%n%s%n", "RegressionTest0.test041");
         java.io.Reader reader0 = null;
         org.apache.commons.csv.CSVFormat cSVFormat1 = null;
         // The following exception was thrown during execution in test generation
@@ -619,9 +619,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test42() throws Throwable {
+    public void test042() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test42");
+            System.out.format("%n%s%n", "RegressionTest0.test042");
         java.io.Reader reader0 = null;
         org.apache.commons.csv.CSVFormat cSVFormat1 = null;
         // The following exception was thrown during execution in test generation
@@ -634,9 +634,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test43() throws Throwable {
+    public void test043() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test43");
+            System.out.format("%n%s%n", "RegressionTest0.test043");
         java.io.Reader reader0 = null;
         org.apache.commons.csv.CSVFormat cSVFormat1 = null;
         // The following exception was thrown during execution in test generation
@@ -649,9 +649,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test44() throws Throwable {
+    public void test044() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test44");
+            System.out.format("%n%s%n", "RegressionTest0.test044");
         java.io.Reader reader0 = null;
         org.apache.commons.csv.CSVFormat cSVFormat1 = null;
         // The following exception was thrown during execution in test generation
@@ -664,9 +664,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test45() throws Throwable {
+    public void test045() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test45");
+            System.out.format("%n%s%n", "RegressionTest0.test045");
         java.io.Reader reader0 = null;
         org.apache.commons.csv.CSVFormat cSVFormat1 = null;
         // The following exception was thrown during execution in test generation
@@ -679,9 +679,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test46() throws Throwable {
+    public void test046() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test46");
+            System.out.format("%n%s%n", "RegressionTest0.test046");
         java.io.Reader reader0 = null;
         org.apache.commons.csv.CSVFormat cSVFormat1 = null;
         // The following exception was thrown during execution in test generation
@@ -694,9 +694,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test47() throws Throwable {
+    public void test047() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test47");
+            System.out.format("%n%s%n", "RegressionTest0.test047");
         java.io.Reader reader0 = null;
         org.apache.commons.csv.CSVFormat cSVFormat1 = null;
         // The following exception was thrown during execution in test generation
@@ -709,9 +709,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test48() throws Throwable {
+    public void test048() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test48");
+            System.out.format("%n%s%n", "RegressionTest0.test048");
         java.io.Reader reader0 = null;
         org.apache.commons.csv.CSVFormat cSVFormat1 = null;
         // The following exception was thrown during execution in test generation
@@ -724,9 +724,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test49() throws Throwable {
+    public void test049() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test49");
+            System.out.format("%n%s%n", "RegressionTest0.test049");
         java.io.Reader reader0 = null;
         org.apache.commons.csv.CSVFormat cSVFormat1 = null;
         // The following exception was thrown during execution in test generation
@@ -739,9 +739,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test50() throws Throwable {
+    public void test050() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test50");
+            System.out.format("%n%s%n", "RegressionTest0.test050");
         java.io.Reader reader0 = null;
         org.apache.commons.csv.CSVFormat cSVFormat1 = null;
         // The following exception was thrown during execution in test generation
@@ -754,9 +754,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test51() throws Throwable {
+    public void test051() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test51");
+            System.out.format("%n%s%n", "RegressionTest0.test051");
         java.io.Reader reader0 = null;
         org.apache.commons.csv.CSVFormat cSVFormat1 = null;
         // The following exception was thrown during execution in test generation
@@ -769,9 +769,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test52() throws Throwable {
+    public void test052() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test52");
+            System.out.format("%n%s%n", "RegressionTest0.test052");
         java.io.Reader reader0 = null;
         org.apache.commons.csv.CSVFormat cSVFormat1 = null;
         // The following exception was thrown during execution in test generation
@@ -784,9 +784,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test53() throws Throwable {
+    public void test053() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test53");
+            System.out.format("%n%s%n", "RegressionTest0.test053");
         java.io.Reader reader0 = null;
         org.apache.commons.csv.CSVFormat cSVFormat1 = null;
         // The following exception was thrown during execution in test generation
@@ -799,9 +799,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test54() throws Throwable {
+    public void test054() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test54");
+            System.out.format("%n%s%n", "RegressionTest0.test054");
         java.io.Reader reader0 = null;
         org.apache.commons.csv.CSVFormat cSVFormat1 = null;
         // The following exception was thrown during execution in test generation
@@ -814,9 +814,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test55() throws Throwable {
+    public void test055() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test55");
+            System.out.format("%n%s%n", "RegressionTest0.test055");
         java.io.Reader reader0 = null;
         org.apache.commons.csv.CSVFormat cSVFormat1 = null;
         // The following exception was thrown during execution in test generation
@@ -829,9 +829,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test56() throws Throwable {
+    public void test056() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test56");
+            System.out.format("%n%s%n", "RegressionTest0.test056");
         java.io.Reader reader0 = null;
         org.apache.commons.csv.CSVFormat cSVFormat1 = null;
         // The following exception was thrown during execution in test generation
@@ -844,9 +844,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test57() throws Throwable {
+    public void test057() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test57");
+            System.out.format("%n%s%n", "RegressionTest0.test057");
         java.io.Reader reader0 = null;
         org.apache.commons.csv.CSVFormat cSVFormat1 = null;
         // The following exception was thrown during execution in test generation
@@ -859,9 +859,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test58() throws Throwable {
+    public void test058() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test58");
+            System.out.format("%n%s%n", "RegressionTest0.test058");
         java.io.Reader reader0 = null;
         org.apache.commons.csv.CSVFormat cSVFormat1 = null;
         // The following exception was thrown during execution in test generation
@@ -874,9 +874,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test59() throws Throwable {
+    public void test059() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test59");
+            System.out.format("%n%s%n", "RegressionTest0.test059");
         java.io.Reader reader0 = null;
         org.apache.commons.csv.CSVFormat cSVFormat1 = null;
         // The following exception was thrown during execution in test generation
@@ -889,9 +889,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test60() throws Throwable {
+    public void test060() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test60");
+            System.out.format("%n%s%n", "RegressionTest0.test060");
         java.io.Reader reader0 = null;
         org.apache.commons.csv.CSVFormat cSVFormat1 = null;
         // The following exception was thrown during execution in test generation
@@ -904,9 +904,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test61() throws Throwable {
+    public void test061() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test61");
+            System.out.format("%n%s%n", "RegressionTest0.test061");
         java.io.Reader reader0 = null;
         org.apache.commons.csv.CSVFormat cSVFormat1 = null;
         // The following exception was thrown during execution in test generation
@@ -919,9 +919,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test62() throws Throwable {
+    public void test062() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test62");
+            System.out.format("%n%s%n", "RegressionTest0.test062");
         java.io.Reader reader0 = null;
         org.apache.commons.csv.CSVFormat cSVFormat1 = null;
         // The following exception was thrown during execution in test generation
@@ -934,9 +934,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test63() throws Throwable {
+    public void test063() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test63");
+            System.out.format("%n%s%n", "RegressionTest0.test063");
         java.io.Reader reader0 = null;
         org.apache.commons.csv.CSVFormat cSVFormat1 = null;
         // The following exception was thrown during execution in test generation
@@ -949,9 +949,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test64() throws Throwable {
+    public void test064() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test64");
+            System.out.format("%n%s%n", "RegressionTest0.test064");
         java.io.Reader reader0 = null;
         org.apache.commons.csv.CSVFormat cSVFormat1 = null;
         // The following exception was thrown during execution in test generation
@@ -964,9 +964,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test65() throws Throwable {
+    public void test065() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test65");
+            System.out.format("%n%s%n", "RegressionTest0.test065");
         java.io.Reader reader0 = null;
         org.apache.commons.csv.CSVFormat cSVFormat1 = null;
         // The following exception was thrown during execution in test generation
@@ -979,9 +979,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test66() throws Throwable {
+    public void test066() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test66");
+            System.out.format("%n%s%n", "RegressionTest0.test066");
         java.io.Reader reader0 = null;
         org.apache.commons.csv.CSVFormat cSVFormat1 = null;
         // The following exception was thrown during execution in test generation
@@ -994,9 +994,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test67() throws Throwable {
+    public void test067() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test67");
+            System.out.format("%n%s%n", "RegressionTest0.test067");
         java.io.Reader reader0 = null;
         org.apache.commons.csv.CSVFormat cSVFormat1 = null;
         // The following exception was thrown during execution in test generation
@@ -1009,9 +1009,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test68() throws Throwable {
+    public void test068() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test68");
+            System.out.format("%n%s%n", "RegressionTest0.test068");
         java.io.Reader reader0 = null;
         org.apache.commons.csv.CSVFormat cSVFormat1 = null;
         // The following exception was thrown during execution in test generation
@@ -1024,9 +1024,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test69() throws Throwable {
+    public void test069() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test69");
+            System.out.format("%n%s%n", "RegressionTest0.test069");
         java.io.Reader reader0 = null;
         org.apache.commons.csv.CSVFormat cSVFormat1 = null;
         // The following exception was thrown during execution in test generation
@@ -1039,14 +1039,584 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test70() throws Throwable {
+    public void test070() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test70");
+            System.out.format("%n%s%n", "RegressionTest0.test070");
         java.io.Reader reader0 = null;
         org.apache.commons.csv.CSVFormat cSVFormat1 = null;
         // The following exception was thrown during execution in test generation
         try {
             org.apache.commons.csv.CSVParser cSVParser4 = new org.apache.commons.csv.CSVParser(reader0, cSVFormat1, (long) '4', (long) (byte) 100);
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: reader");
+        } catch (java.lang.NullPointerException e) {
+            // Expected exception.
+        }
+    }
+
+    @Test
+    public void test071() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test071");
+        java.io.Reader reader0 = null;
+        org.apache.commons.csv.CSVFormat cSVFormat1 = null;
+        // The following exception was thrown during execution in test generation
+        try {
+            org.apache.commons.csv.CSVParser cSVParser4 = new org.apache.commons.csv.CSVParser(reader0, cSVFormat1, 100L, (long) (byte) 10);
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: reader");
+        } catch (java.lang.NullPointerException e) {
+            // Expected exception.
+        }
+    }
+
+    @Test
+    public void test072() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test072");
+        java.io.Reader reader0 = null;
+        org.apache.commons.csv.CSVFormat cSVFormat1 = null;
+        // The following exception was thrown during execution in test generation
+        try {
+            org.apache.commons.csv.CSVParser cSVParser4 = new org.apache.commons.csv.CSVParser(reader0, cSVFormat1, (long) ' ', (long) ' ');
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: reader");
+        } catch (java.lang.NullPointerException e) {
+            // Expected exception.
+        }
+    }
+
+    @Test
+    public void test073() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test073");
+        java.io.Reader reader0 = null;
+        org.apache.commons.csv.CSVFormat cSVFormat1 = null;
+        // The following exception was thrown during execution in test generation
+        try {
+            org.apache.commons.csv.CSVParser cSVParser4 = new org.apache.commons.csv.CSVParser(reader0, cSVFormat1, (-1L), (long) (byte) -1);
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: reader");
+        } catch (java.lang.NullPointerException e) {
+            // Expected exception.
+        }
+    }
+
+    @Test
+    public void test074() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test074");
+        java.io.Reader reader0 = null;
+        org.apache.commons.csv.CSVFormat cSVFormat1 = null;
+        // The following exception was thrown during execution in test generation
+        try {
+            org.apache.commons.csv.CSVParser cSVParser4 = new org.apache.commons.csv.CSVParser(reader0, cSVFormat1, 10L, (long) (byte) 1);
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: reader");
+        } catch (java.lang.NullPointerException e) {
+            // Expected exception.
+        }
+    }
+
+    @Test
+    public void test075() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test075");
+        java.io.Reader reader0 = null;
+        org.apache.commons.csv.CSVFormat cSVFormat1 = null;
+        // The following exception was thrown during execution in test generation
+        try {
+            org.apache.commons.csv.CSVParser cSVParser4 = new org.apache.commons.csv.CSVParser(reader0, cSVFormat1, (long) (short) 10, (long) (short) -1);
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: reader");
+        } catch (java.lang.NullPointerException e) {
+            // Expected exception.
+        }
+    }
+
+    @Test
+    public void test076() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test076");
+        java.io.Reader reader0 = null;
+        org.apache.commons.csv.CSVFormat cSVFormat1 = null;
+        // The following exception was thrown during execution in test generation
+        try {
+            org.apache.commons.csv.CSVParser cSVParser4 = new org.apache.commons.csv.CSVParser(reader0, cSVFormat1, (long) 0, (-1L));
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: reader");
+        } catch (java.lang.NullPointerException e) {
+            // Expected exception.
+        }
+    }
+
+    @Test
+    public void test077() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test077");
+        java.io.Reader reader0 = null;
+        org.apache.commons.csv.CSVFormat cSVFormat1 = null;
+        // The following exception was thrown during execution in test generation
+        try {
+            org.apache.commons.csv.CSVParser cSVParser4 = new org.apache.commons.csv.CSVParser(reader0, cSVFormat1, (long) (short) -1, (long) 10);
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: reader");
+        } catch (java.lang.NullPointerException e) {
+            // Expected exception.
+        }
+    }
+
+    @Test
+    public void test078() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test078");
+        java.io.Reader reader0 = null;
+        org.apache.commons.csv.CSVFormat cSVFormat1 = null;
+        // The following exception was thrown during execution in test generation
+        try {
+            org.apache.commons.csv.CSVParser cSVParser4 = new org.apache.commons.csv.CSVParser(reader0, cSVFormat1, (long) (byte) 10, (long) (short) 100);
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: reader");
+        } catch (java.lang.NullPointerException e) {
+            // Expected exception.
+        }
+    }
+
+    @Test
+    public void test079() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test079");
+        java.io.Reader reader0 = null;
+        org.apache.commons.csv.CSVFormat cSVFormat1 = null;
+        // The following exception was thrown during execution in test generation
+        try {
+            org.apache.commons.csv.CSVParser cSVParser4 = new org.apache.commons.csv.CSVParser(reader0, cSVFormat1, (long) (byte) -1, (long) (short) 0);
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: reader");
+        } catch (java.lang.NullPointerException e) {
+            // Expected exception.
+        }
+    }
+
+    @Test
+    public void test080() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test080");
+        java.io.Reader reader0 = null;
+        org.apache.commons.csv.CSVFormat cSVFormat1 = null;
+        // The following exception was thrown during execution in test generation
+        try {
+            org.apache.commons.csv.CSVParser cSVParser4 = new org.apache.commons.csv.CSVParser(reader0, cSVFormat1, (long) (byte) 100, (long) '4');
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: reader");
+        } catch (java.lang.NullPointerException e) {
+            // Expected exception.
+        }
+    }
+
+    @Test
+    public void test081() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test081");
+        java.io.Reader reader0 = null;
+        org.apache.commons.csv.CSVFormat cSVFormat1 = null;
+        // The following exception was thrown during execution in test generation
+        try {
+            org.apache.commons.csv.CSVParser cSVParser4 = new org.apache.commons.csv.CSVParser(reader0, cSVFormat1, (-1L), 100L);
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: reader");
+        } catch (java.lang.NullPointerException e) {
+            // Expected exception.
+        }
+    }
+
+    @Test
+    public void test082() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test082");
+        java.io.Reader reader0 = null;
+        org.apache.commons.csv.CSVFormat cSVFormat1 = null;
+        // The following exception was thrown during execution in test generation
+        try {
+            org.apache.commons.csv.CSVParser cSVParser4 = new org.apache.commons.csv.CSVParser(reader0, cSVFormat1, 1L, 1L);
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: reader");
+        } catch (java.lang.NullPointerException e) {
+            // Expected exception.
+        }
+    }
+
+    @Test
+    public void test083() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test083");
+        java.io.Reader reader0 = null;
+        org.apache.commons.csv.CSVFormat cSVFormat1 = null;
+        // The following exception was thrown during execution in test generation
+        try {
+            org.apache.commons.csv.CSVParser cSVParser4 = new org.apache.commons.csv.CSVParser(reader0, cSVFormat1, 100L, (long) (short) 1);
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: reader");
+        } catch (java.lang.NullPointerException e) {
+            // Expected exception.
+        }
+    }
+
+    @Test
+    public void test084() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test084");
+        java.io.Reader reader0 = null;
+        org.apache.commons.csv.CSVFormat cSVFormat1 = null;
+        // The following exception was thrown during execution in test generation
+        try {
+            org.apache.commons.csv.CSVParser cSVParser4 = new org.apache.commons.csv.CSVParser(reader0, cSVFormat1, 100L, (long) '#');
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: reader");
+        } catch (java.lang.NullPointerException e) {
+            // Expected exception.
+        }
+    }
+
+    @Test
+    public void test085() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test085");
+        java.io.Reader reader0 = null;
+        org.apache.commons.csv.CSVFormat cSVFormat1 = null;
+        // The following exception was thrown during execution in test generation
+        try {
+            org.apache.commons.csv.CSVParser cSVParser4 = new org.apache.commons.csv.CSVParser(reader0, cSVFormat1, (long) (byte) 100, (long) 100);
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: reader");
+        } catch (java.lang.NullPointerException e) {
+            // Expected exception.
+        }
+    }
+
+    @Test
+    public void test086() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test086");
+        java.io.Reader reader0 = null;
+        org.apache.commons.csv.CSVFormat cSVFormat1 = null;
+        // The following exception was thrown during execution in test generation
+        try {
+            org.apache.commons.csv.CSVParser cSVParser4 = new org.apache.commons.csv.CSVParser(reader0, cSVFormat1, (long) (short) 1, (long) (short) 0);
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: reader");
+        } catch (java.lang.NullPointerException e) {
+            // Expected exception.
+        }
+    }
+
+    @Test
+    public void test087() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test087");
+        java.io.Reader reader0 = null;
+        org.apache.commons.csv.CSVFormat cSVFormat1 = null;
+        // The following exception was thrown during execution in test generation
+        try {
+            org.apache.commons.csv.CSVParser cSVParser4 = new org.apache.commons.csv.CSVParser(reader0, cSVFormat1, (long) '4', (long) (byte) -1);
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: reader");
+        } catch (java.lang.NullPointerException e) {
+            // Expected exception.
+        }
+    }
+
+    @Test
+    public void test088() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test088");
+        java.io.Reader reader0 = null;
+        org.apache.commons.csv.CSVFormat cSVFormat1 = null;
+        // The following exception was thrown during execution in test generation
+        try {
+            org.apache.commons.csv.CSVParser cSVParser4 = new org.apache.commons.csv.CSVParser(reader0, cSVFormat1, (-1L), 1L);
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: reader");
+        } catch (java.lang.NullPointerException e) {
+            // Expected exception.
+        }
+    }
+
+    @Test
+    public void test089() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test089");
+        java.io.Reader reader0 = null;
+        org.apache.commons.csv.CSVFormat cSVFormat1 = null;
+        // The following exception was thrown during execution in test generation
+        try {
+            org.apache.commons.csv.CSVParser cSVParser4 = new org.apache.commons.csv.CSVParser(reader0, cSVFormat1, 0L, (long) (-1));
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: reader");
+        } catch (java.lang.NullPointerException e) {
+            // Expected exception.
+        }
+    }
+
+    @Test
+    public void test090() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test090");
+        java.io.Reader reader0 = null;
+        org.apache.commons.csv.CSVFormat cSVFormat1 = null;
+        // The following exception was thrown during execution in test generation
+        try {
+            org.apache.commons.csv.CSVParser cSVParser4 = new org.apache.commons.csv.CSVParser(reader0, cSVFormat1, (long) (byte) 0, (long) (byte) 10);
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: reader");
+        } catch (java.lang.NullPointerException e) {
+            // Expected exception.
+        }
+    }
+
+    @Test
+    public void test091() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test091");
+        java.io.Reader reader0 = null;
+        org.apache.commons.csv.CSVFormat cSVFormat1 = null;
+        // The following exception was thrown during execution in test generation
+        try {
+            org.apache.commons.csv.CSVParser cSVParser4 = new org.apache.commons.csv.CSVParser(reader0, cSVFormat1, (long) (byte) 0, (long) (byte) 100);
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: reader");
+        } catch (java.lang.NullPointerException e) {
+            // Expected exception.
+        }
+    }
+
+    @Test
+    public void test092() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test092");
+        java.io.Reader reader0 = null;
+        org.apache.commons.csv.CSVFormat cSVFormat1 = null;
+        // The following exception was thrown during execution in test generation
+        try {
+            org.apache.commons.csv.CSVParser cSVParser4 = new org.apache.commons.csv.CSVParser(reader0, cSVFormat1, (long) (byte) 10, (long) (short) 1);
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: reader");
+        } catch (java.lang.NullPointerException e) {
+            // Expected exception.
+        }
+    }
+
+    @Test
+    public void test093() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test093");
+        java.io.Reader reader0 = null;
+        org.apache.commons.csv.CSVFormat cSVFormat1 = null;
+        // The following exception was thrown during execution in test generation
+        try {
+            org.apache.commons.csv.CSVParser cSVParser4 = new org.apache.commons.csv.CSVParser(reader0, cSVFormat1, (long) '4', (long) 0);
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: reader");
+        } catch (java.lang.NullPointerException e) {
+            // Expected exception.
+        }
+    }
+
+    @Test
+    public void test094() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test094");
+        java.io.Reader reader0 = null;
+        org.apache.commons.csv.CSVFormat cSVFormat1 = null;
+        // The following exception was thrown during execution in test generation
+        try {
+            org.apache.commons.csv.CSVParser cSVParser4 = new org.apache.commons.csv.CSVParser(reader0, cSVFormat1, (long) 0, (long) (-1));
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: reader");
+        } catch (java.lang.NullPointerException e) {
+            // Expected exception.
+        }
+    }
+
+    @Test
+    public void test095() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test095");
+        java.io.Reader reader0 = null;
+        org.apache.commons.csv.CSVFormat cSVFormat1 = null;
+        // The following exception was thrown during execution in test generation
+        try {
+            org.apache.commons.csv.CSVParser cSVParser4 = new org.apache.commons.csv.CSVParser(reader0, cSVFormat1, (long) (byte) 100, 0L);
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: reader");
+        } catch (java.lang.NullPointerException e) {
+            // Expected exception.
+        }
+    }
+
+    @Test
+    public void test096() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test096");
+        java.io.Reader reader0 = null;
+        org.apache.commons.csv.CSVFormat cSVFormat1 = null;
+        // The following exception was thrown during execution in test generation
+        try {
+            org.apache.commons.csv.CSVParser cSVParser4 = new org.apache.commons.csv.CSVParser(reader0, cSVFormat1, (long) (byte) 1, 10L);
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: reader");
+        } catch (java.lang.NullPointerException e) {
+            // Expected exception.
+        }
+    }
+
+    @Test
+    public void test097() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test097");
+        java.io.Reader reader0 = null;
+        org.apache.commons.csv.CSVFormat cSVFormat1 = null;
+        // The following exception was thrown during execution in test generation
+        try {
+            org.apache.commons.csv.CSVParser cSVParser4 = new org.apache.commons.csv.CSVParser(reader0, cSVFormat1, (long) (-1), (long) 100);
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: reader");
+        } catch (java.lang.NullPointerException e) {
+            // Expected exception.
+        }
+    }
+
+    @Test
+    public void test098() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test098");
+        java.io.Reader reader0 = null;
+        org.apache.commons.csv.CSVFormat cSVFormat1 = null;
+        // The following exception was thrown during execution in test generation
+        try {
+            org.apache.commons.csv.CSVParser cSVParser4 = new org.apache.commons.csv.CSVParser(reader0, cSVFormat1, (long) (byte) 1, 1L);
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: reader");
+        } catch (java.lang.NullPointerException e) {
+            // Expected exception.
+        }
+    }
+
+    @Test
+    public void test099() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test099");
+        java.io.Reader reader0 = null;
+        org.apache.commons.csv.CSVFormat cSVFormat1 = null;
+        // The following exception was thrown during execution in test generation
+        try {
+            org.apache.commons.csv.CSVParser cSVParser4 = new org.apache.commons.csv.CSVParser(reader0, cSVFormat1, (long) 'a', (long) (byte) 0);
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: reader");
+        } catch (java.lang.NullPointerException e) {
+            // Expected exception.
+        }
+    }
+
+    @Test
+    public void test100() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test100");
+        java.io.Reader reader0 = null;
+        org.apache.commons.csv.CSVFormat cSVFormat1 = null;
+        // The following exception was thrown during execution in test generation
+        try {
+            org.apache.commons.csv.CSVParser cSVParser4 = new org.apache.commons.csv.CSVParser(reader0, cSVFormat1, (long) (short) 100, (long) '#');
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: reader");
+        } catch (java.lang.NullPointerException e) {
+            // Expected exception.
+        }
+    }
+
+    @Test
+    public void test101() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test101");
+        java.io.Reader reader0 = null;
+        org.apache.commons.csv.CSVFormat cSVFormat1 = null;
+        // The following exception was thrown during execution in test generation
+        try {
+            org.apache.commons.csv.CSVParser cSVParser4 = new org.apache.commons.csv.CSVParser(reader0, cSVFormat1, (long) (byte) 1, (long) (short) -1);
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: reader");
+        } catch (java.lang.NullPointerException e) {
+            // Expected exception.
+        }
+    }
+
+    @Test
+    public void test102() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test102");
+        java.io.Reader reader0 = null;
+        org.apache.commons.csv.CSVFormat cSVFormat1 = null;
+        // The following exception was thrown during execution in test generation
+        try {
+            org.apache.commons.csv.CSVParser cSVParser4 = new org.apache.commons.csv.CSVParser(reader0, cSVFormat1, (long) (byte) -1, (long) (byte) 100);
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: reader");
+        } catch (java.lang.NullPointerException e) {
+            // Expected exception.
+        }
+    }
+
+    @Test
+    public void test103() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test103");
+        java.io.Reader reader0 = null;
+        org.apache.commons.csv.CSVFormat cSVFormat1 = null;
+        // The following exception was thrown during execution in test generation
+        try {
+            org.apache.commons.csv.CSVParser cSVParser4 = new org.apache.commons.csv.CSVParser(reader0, cSVFormat1, (long) 0, 100L);
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: reader");
+        } catch (java.lang.NullPointerException e) {
+            // Expected exception.
+        }
+    }
+
+    @Test
+    public void test104() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test104");
+        java.io.Reader reader0 = null;
+        org.apache.commons.csv.CSVFormat cSVFormat1 = null;
+        // The following exception was thrown during execution in test generation
+        try {
+            org.apache.commons.csv.CSVParser cSVParser4 = new org.apache.commons.csv.CSVParser(reader0, cSVFormat1, (long) 1, (long) (byte) 0);
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: reader");
+        } catch (java.lang.NullPointerException e) {
+            // Expected exception.
+        }
+    }
+
+    @Test
+    public void test105() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test105");
+        java.io.Reader reader0 = null;
+        org.apache.commons.csv.CSVFormat cSVFormat1 = null;
+        // The following exception was thrown during execution in test generation
+        try {
+            org.apache.commons.csv.CSVParser cSVParser4 = new org.apache.commons.csv.CSVParser(reader0, cSVFormat1, 10L, (long) ' ');
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: reader");
+        } catch (java.lang.NullPointerException e) {
+            // Expected exception.
+        }
+    }
+
+    @Test
+    public void test106() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test106");
+        java.io.Reader reader0 = null;
+        org.apache.commons.csv.CSVFormat cSVFormat1 = null;
+        // The following exception was thrown during execution in test generation
+        try {
+            org.apache.commons.csv.CSVParser cSVParser4 = new org.apache.commons.csv.CSVParser(reader0, cSVFormat1, (long) (byte) 1, (-1L));
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: reader");
+        } catch (java.lang.NullPointerException e) {
+            // Expected exception.
+        }
+    }
+
+    @Test
+    public void test107() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test107");
+        java.io.Reader reader0 = null;
+        org.apache.commons.csv.CSVFormat cSVFormat1 = null;
+        // The following exception was thrown during execution in test generation
+        try {
+            org.apache.commons.csv.CSVParser cSVParser4 = new org.apache.commons.csv.CSVParser(reader0, cSVFormat1, (long) (byte) -1, (long) (byte) -1);
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: reader");
+        } catch (java.lang.NullPointerException e) {
+            // Expected exception.
+        }
+    }
+
+    @Test
+    public void test108() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test108");
+        java.io.Reader reader0 = null;
+        org.apache.commons.csv.CSVFormat cSVFormat1 = null;
+        // The following exception was thrown during execution in test generation
+        try {
+            org.apache.commons.csv.CSVParser cSVParser4 = new org.apache.commons.csv.CSVParser(reader0, cSVFormat1, (long) (short) 10, (long) (-1));
             org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: reader");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
